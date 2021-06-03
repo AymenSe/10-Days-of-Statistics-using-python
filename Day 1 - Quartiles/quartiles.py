@@ -15,9 +15,9 @@ def quartiles(arr):
  
     if l % 2 == 0:
         q1 = (arr1[l//2] + arr1[l//2 - 1]) / 2
-        q2 = (arr2[l//2] + arr2[l//2 - 1]) / 2
+        q3 = (arr2[l//2] + arr2[l//2 - 1]) / 2
     else:
         q1 = arr1[l//2]
-        q2 = arr2[l//2]
-    res = list(map(int, [q1, median, q2]))
+        q3 = arr2[l//2]
+    res = list(map(int, [q1, median, q3]))
     return res
